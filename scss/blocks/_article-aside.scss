@@ -11,6 +11,17 @@
   &__back {
     margin: 0 0 32px 0;
 
+    .link-back__text {
+      transition: color $transition-300;
+    }
+
+    &:hover,
+    &:focus-visible {
+      .link-back__text {
+        color: $color-blue;
+      }
+    }
+
     @include vp-1023 {
       display: none;
     }
@@ -21,7 +32,7 @@
     font-size: 16px;
     font-weight: 300;
     line-height: 26px;
-    margin: 0 0 40px 0;
+    margin: 0 0 8px 0;
     padding: 29px 0 0 0;
     text-transform: uppercase;
 
@@ -57,6 +68,17 @@
     padding: 0 0 0 32px;
     position: relative;
 
+    &:hover,
+    &:focus-visible {
+      .article-aside__link {
+        color: $color-blue;
+      }
+
+      &::before {
+        color: $color-blue;
+      }
+    }
+
     &::before {
       color: $color-dim-gray;
       content: counter(aside-list) ".";
@@ -65,6 +87,7 @@
       line-height: 16px;
       position: absolute;
       top: 0;
+      transition: $transition-300;
     }
   }
 
