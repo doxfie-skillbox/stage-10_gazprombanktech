@@ -30,13 +30,13 @@
     height: 228px;
     object-fit: contain;
     position: absolute;
-    right: -48px;
+    right: -30px;
     top: -80px;
     width: 228px;
     z-index: 1;
 
-    @media (max-width: 1299px) {
-      right: -30px;
+    @media (max-width: 1399px) {
+      right: -15px;
     }
 
     @include vp-1023 {

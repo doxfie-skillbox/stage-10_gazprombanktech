@@ -5,12 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Советы для начинающих IT-специалистов: как успешно пройти собеседование, подготовить резюме и повысить шансы на работу мечты.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
   <link rel="shortcut icon" href="favicon/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
+  <link rel="preload" href="fonts/Unbounded-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Unbounded-Regular.woff2" as="font" crossorigin="anonymous">
   <title>Как стать идеальным кандидатом на собеседовании - Газпромбанк.Тех</title>
 </head>
 
@@ -18,7 +21,7 @@
   <header class="header">
     <div class="container">
       <div class="header__wrapper">
-        <a class="header__logo" href="#">
+        <a class="header__logo" href="#" aria-label="На главную - Газпромбанк.Тех">
           <svg class="header__logo-icon" width="354" height="19" aria-hidden="true">
             <use xlink:href="images/sprite.svg#icon-logo-header"></use>
           </svg>
@@ -37,7 +40,7 @@
               <a class="main-nav__link" href="#">события</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--active" href="#">блог</a>
+              <a class="main-nav__link main-nav__link--active" href="blog.html">блог</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">стартапам</a>
@@ -65,7 +68,7 @@
         <picture>
           <source media="(max-width: 767px)" srcset="images/article-decor-mobile.png">
           <source media="(max-width: 1023px)" srcset="images/article-decor-tablet.png">
-          <img class="article-hero__decor-img" src="images/article-decor.png" width="1214" height="577" alt="Декоративный элемент">
+          <img class="article-hero__decor-img" src="images/article-decor.png" width="1214" height="577" alt="Декоративный элемент" fetchpriority="high">
         </picture>
       </div>
       <div class="container">
@@ -98,7 +101,7 @@
       <div class="container">
         <div class="article__wrapper">
           <aside class="article-aside">
-            <a class="article-aside__back link-back" href="#">
+            <a class="article-aside__back link-back" href="blog.html">
               <svg class="link-back__icon" width="46" height="14" aria-hidden="true">
                 <use xlink:href="images/sprite.svg#icon-arrow-left"></use>
               </svg>
@@ -107,28 +110,28 @@
             <h2 class="article-aside__title article-aside__title--tablet-none">Содержание:</h2>
             <ul class="article-aside__list">
               <li class="article-aside__item">
-                <a href="#" class="article-aside__link">Ставка на софт скиллы</a>
+                <a href="#part1" class="article-aside__link">Ставка на софт скиллы</a>
               </li>
               <li class="article-aside__item">
-                <a href="#" class="article-aside__link">Отклик на вакансию – по всем правилам</a>
+                <a href="#part2" class="article-aside__link">Отклик на вакансию – по всем правилам</a>
               </li>
               <li class="article-aside__item">
-                <a href="#" class="article-aside__link">Защита резюме</a>
+                <a href="#part3" class="article-aside__link">Защита резюме</a>
               </li>
               <li class="article-aside__item">
-                <a href="#" class="article-aside__link">Вакансия и проект: знать все</a>
+                <a href="#part4" class="article-aside__link">Вакансия и проект: знать все</a>
               </li>
               <li class="article-aside__item">
-                <a href="#" class="article-aside__link">Собеседование: правила поведения</a>
+                <a href="#part5" class="article-aside__link">Собеседование: правила поведения</a>
               </li>
               <li class="article-aside__item">
-                <a href="#" class="article-aside__link">Установите контакт и будьте собой</a>
+                <a href="#part6" class="article-aside__link">Установите контакт и будьте собой</a>
               </li>
               <li class="article-aside__item">
-                <a href="" class="article-aside__link">Вопросы на собеседовании</a>
+                <a href="#part7" class="article-aside__link">Вопросы на собеседовании</a>
               </li>
               <li class="article-aside__item">
-                <a href="#" class="article-aside__link">Собеседуйтесь чаще</a>
+                <a href="#part8" class="article-aside__link">Собеседуйтесь чаще</a>
               </li>
             </ul>
             <div class="article-aside__inner">
@@ -159,9 +162,9 @@
               <source media="(max-width: 1023px)" srcset="images/article-img-1-tablet.jpg 1x, images/article-img-1-tablet@2x.jpg 2x">
               <img class="article__img" src="images/article-img-1.jpg" srcset="images/article-img-1@2x.jpg 2x" height="820" width="440" alt="Иллюстрация новости">
             </picture>
-            <h2 class="article__heading">Ставка на софт скиллы</h2>
+            <h2 class="article__heading" id="part1">Ставка на софт скиллы</h2>
             <p class="article__text">Быть профессионалом и с легкостью проходить все этапы собеседования – далеко не всегда одно и то же. Работодатель оценивает кандидатов комплексно. Чтобы получить хорошую работу и оправдать зарплатные ожидания, важно не только доказать свою компетентность и профессиональный опыт, но и продать себя как красиво упакованный личный бренд. Покажите желание учиться и развиваться, интерес ко всему новому, умение вести диалог и работать в команде – все то, что входит в понятие софт скиллов.</p>
-            <h2 class="article__heading">Отклик на вакансию – по всем правилам</h2>
+            <h2 class="article__heading" id="part2">Отклик на вакансию – по всем правилам</h2>
             <p class="article__text">Собеседование начинается не в кабинете руководителя. Оно начинается с отклика на вакансию и грамотного сопроводительного письма. Главная цель – выделиться на фоне остальных соискателей. Сопроводительное письмо – прекрасный повод продемонстрировать вашу грамотность, умение излагать мысли, а также заинтересованность в вакансии.</p>
             <p class="article__text">Письмо должно быть лаконичным и содержательным. Его оптимальный размер – три-пять абзацев, менее одной страницы формата А4. Избегайте канцеляризмов и бюрократического языка. Это только усложняет понимание текста. Стиль письма должен быть деловым, но не слишком официальным. Вместо «прошу Вас рассмотреть мою кандидатуру на должность…» можно написать просто: «Меня заинтересовала вакансия…, хочу стать частью команды компании «Икс». Далее объясните, почему вас привлекла вакансия и компания, что вам даст эта работа. Расскажите о своих профессиональных качествах, релевантных для вакансии. В заключении поблагодарите потенциального работодателя за уделенное внимание и выразите готовность приехать на собеседование. Укажите, как с вами можно связаться.</p>
             <blockquote class="article__blockquote">
@@ -172,13 +175,13 @@
               </div>
               <p class="article__blockquote-text">В рекламных текстах есть прием, который маркетологи называют «призыв к действию». Вы можете воспользоваться им в сопроводительном письме, написав: «Звоните – буду рад пообщаться лично». И, конечно, не забудьте прикрепить резюме. :)</p>
             </blockquote>
-            <h2 class="article__heading">Защита резюме</h2>
+            <h2 class="article__heading" id="part3">Защита резюме</h2>
             <p class="article__text">Перед собеседованием внимательно изучите собственное резюме. Вы должны быть готовы к вопросам, касающимся прошлого профессионального опыта. Освежите в памяти, чем вы занимались на разных должностях в разных компаниях, как выстраивали собственный карьерный трек, к чему стремились и что в итоге получилось, что помогало или, наоборот, мешало вашему карьерному росту.</p>
             <p class="article__text">Продумайте ответы на вопрос, почему вы ушли из предыдущей компании – его очень любят задавать рекрутеры. Здесь должна быть реальная причина, но важно, чтобы она звучала уважительно по отношению к предыдущему работодателю. Это позволит сделать выводы о вашей способности достойно выходить из сложных ситуаций, общаться с коллегами, соблюдать нормы и правила делового общения. А еще – это своеобразный тест на лояльность работодателю. Не стоит ограничиваться официальным «по собственному желанию», ведь за этой нечеткой формулировкой может скрываться что угодно. Дипломатично и комплиментарно для вас будет звучать: «Я перерос свой функционал, но в компании не было возможности участия в новых или более масштабных проектах». Этим вы покажете, что готовы к амбициозным задачам, если это, конечно, является вашей целью. Если не сработались с бывшим начальником, скажите, что отлично ладите с людьми и стараетесь найти подход к каждому, но это был исключительный случай: просто вы с шефом – очень разные люди. Не стоит обвинять бывшего начальника, будьте дипломатичны.</p>
-            <h2 class="article__heading">Вакансия и проект: знать все</h2>
+            <h2 class="article__heading" id="part4">Вакансия и проект: знать все</h2>
             <p class="article__text">Самый простой и логичный способ показать свою заинтересованность – досконально изучить стек из описания вакансии. Это правило хорошего тона и демонстрация своей способности к обучаемости. Кроме того, так вы покажете рекрутеру, что уже вложили время и силы, сделали первые шаги к адаптации в новой компании и готовы приступить. Не сомневайтесь, что получите плюс один балл в глазах работодателя.</p>
             <p class="article__text">Такое же правило распространяется на проект, с которым вам, возможно, предстоит работать. Погрузитесь в него, будьте готовы ответить на все связанные с ним вопросы.</p>
-            <h2 class="article__heading">Собеседование: правила поведения</h2>
+            <h2 class="article__heading" id="part5">Собеседование: правила поведения</h2>
             <p class="article__text">Общие рекомендации перед собеседованием: выспаться, не опаздывать, заранее сообщить, если не успеваете прийти вовремя.</p>
             <blockquote class="article__blockquote">
               <div class="article__blockquote-inner">
@@ -207,7 +210,7 @@
               <source media="(max-width: 1023px)" srcset="images/article-img-2-tablet.jpg 1x, images/article-img-2-tablet@2x.jpg 2x">
               <img class="article__img" src="images/article-img-2.jpg" srcset="images/article-img-2@2x.jpg 2x" height="820" width="440" alt="Иллюстрация новости">
             </picture>
-            <h2 class="article__heading">Установите контакт и будьте собой</h2>
+            <h2 class="article__heading" id="part6">Установите контакт и будьте собой</h2>
             <p class="article__text">На собеседовании общайтесь вежливо, не перебивайте рекрутера, не будьте слишком эмоциональны или слишком сдержанны, не нарушайте границы собеседника. Постарайтесь отвечать на вопросы искренне, но без негатива. Следите за словами: не стоит употреблять разговорные, сленговые и жаргонные слова.</p>
             <p class="article__text">Также важно не пытаться специально понравиться рекрутеру или будущему руководителю, чтобы получить желаемую должность. Важно быть собой и вести себя естественно.</p>
             <blockquote class="article__blockquote">
@@ -220,7 +223,7 @@
               </div>
               <p class="article__blockquote-text">Во время собеседования крайне важна честность. И руководителю, и кандидату необходимо понять, разделяет ли он ценности компании, соответствует ли будущее место его интересам и целям, сможет ли он реализовать здесь свой потенциал и принести пользу компании.</p>
             </blockquote>
-            <h2 class="article__heading">Вопросы на собеседовании</h2>
+            <h2 class="article__heading" id="part7">Вопросы на собеседовании</h2>
             <p class="article__text">Собираясь на собеседование, нужно хотя бы примерно продумать, как вы будете отвечать на стандартные вопросы, а также продумать ответы на вопросы, которые могут поставить вас в тупик.</p>
             <blockquote class="article__blockquote">
               <div class="article__blockquote-inner">
@@ -233,7 +236,7 @@
               <p class="article__blockquote-text">К собеседованию важно быть готовым морально. Нужно понимать, что вопросы могут быть разного рода. Каждый руководитель проводит собеседование совершенно по-разному, нет какого-то обязательного чек-листа, которому они следуют.</p>
             </blockquote>
             <p class="article__text">Не бойтесь сами задавать вопросы о новой должности и компании. Так вы покажете свою заинтересованность и вовлеченность. Уточните, какие цели будут стоять перед сотрудником на данной должности, по каким KPI будет оцениваться работа, какие конкретно задачи входят в должностные обязанности, почему ушел предыдущий сотрудник, сколько человек будут работать с вами над проектом и планируется ли расширение штата, какие трудности вас могут ожидать. Внимательно следите за ответами и невербальными реакциями рекрутера или работодателя. Важно, чтобы формулировки были четкими, не расплывчатыми. Подробнее о том, какие вопросы задавать на собеседовании, мы рассказывали в этой статье.</p>
-            <h2 class="article__heading">СОБЕСЕДУЙТЕСЬ ЧАЩЕ</h2>
+            <h2 class="article__heading" id="part8">СОБЕСЕДУЙТЕСЬ ЧАЩЕ</h2>
             <p class="article__text">Последнее правило: чтобы чувствовать себя увереннее, ходите на собеседования чаще. Так вы прокачаете умение выстраивать и вести диалог, научитесь не бояться возможного отказа и найдете наконец ту самую работу, например, в команде мечты Газпромбанка.</p>
           </div>
         </div>
@@ -333,7 +336,7 @@
       </div>
       <div class="footer__columns">
         <div class="footer__column">
-          <a class="footer__logo" href="#">
+          <a class="footer__logo" href="#" aria-label="На главную — Газпромбанк.Тех">
             <svg class="footer__logo-icon" width="354" height="19" aria-hidden="true">
               <use xlink:href="images/sprite.svg#icon-logo-header"></use>
             </svg>

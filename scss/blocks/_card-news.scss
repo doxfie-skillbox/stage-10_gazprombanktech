@@ -1,4 +1,4 @@
-.card-info-banner {
+.card-news {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -7,6 +7,12 @@
   border-radius: 20px;
   background: $color-white;
   $root: &;
+
+  &:hover {
+    #{$root}__img {
+      transform: translate(-15px, 20px);
+    }
+  }
 
   @include vp-1023 {
     min-height: 320px;
@@ -30,14 +36,12 @@
     position: absolute;
     z-index: 1;
     top: -80px;
-    right: -48px;
+    right: -15px;
     width: 228px;
     height: 228px;
     object-fit: contain;
-
-    @media (max-width: 1299px) {
-      right: -30px;
-    }
+    transition: transform ease-out 0.3s;
+    pointer-events: none;
 
     @include vp-1023 {
       top: -48px;

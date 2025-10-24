@@ -1,33 +1,26 @@
-.blog-filter {
+.checkbox-tag {
 
-  &__group {
-    margin: 0;
-    padding: 0;
-    border: none;
-  }
+  &__field {
+    &:checked+.checkbox-tag__label {
+      color: $color-blue;
+      border: 1px solid $color-blue;
 
-  &__list {
-    border-top: 1px solid $color-black;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    list-style: none;
-    margin: 0;
-    padding: 28px 0 0;
-
-    @include vp-1023 {
-      gap: 12px;
-      padding-top: 32px;
+      &:focus-visible,
+      &:hover {
+        background-color: $color-blue;
+        color: $color-white;
+      }
     }
   }
 
-  &__reset {
+  &__label {
     align-items: center;
     background-color: transparent;
     border: 1px solid $color-dim-gray;
     border-radius: 4px;
     color: $color-dim-gray;
     cursor: pointer;
+    user-select: none;
     display: flex;
     font-size: 13px;
     font-weight: 400;
@@ -35,8 +28,8 @@
     line-height: 16px;
     padding: 7px;
     transition: background-color $transition-300,
-    color $transition-300,
-    border-color $transition-300;
+      color $transition-300,
+      border-color $transition-300;
 
     @include vp-1023 {
       padding: 7px 9px;
@@ -44,11 +37,7 @@
       line-height: 14px;
     }
 
-    &--active {
-      color: $color-blue;
-      border: 1px solid $color-blue;
-    }
-
+    &:focus-visible,
     &:hover {
       background-color: $color-dim-gray;
       color: $color-white;
