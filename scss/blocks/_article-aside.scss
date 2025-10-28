@@ -71,11 +71,11 @@
     &:hover,
     &:focus-visible {
       .article-aside__link {
-        color: $color-blue;
+        color: $color-black;
       }
 
       &::before {
-        color: $color-blue;
+        color: $color-black;
       }
     }
 
@@ -88,6 +88,16 @@
       position: absolute;
       top: 0;
       transition: $transition-300;
+    }
+
+    &--active {
+      .article-aside__link {
+        color: $color-blue;
+      }
+
+      &::before {
+        color: $color-blue;
+      }
     }
   }
 

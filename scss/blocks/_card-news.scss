@@ -36,12 +36,16 @@
     position: absolute;
     z-index: 1;
     top: -80px;
-    right: -15px;
+    right: -48px;
     width: 228px;
     height: 228px;
     object-fit: contain;
     transition: transform ease-out 0.3s;
     pointer-events: none;
+
+    @media (max-width: 1299px) {
+      right: -30px;
+    }
 
     @include vp-1023 {
       top: -48px;

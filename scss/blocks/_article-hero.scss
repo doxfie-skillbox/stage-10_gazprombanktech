@@ -24,71 +24,23 @@
   }
 
   &__decor-img {
-    width: 1348px;
-    height: 640px;
+    width: 1214px;
+    height: 577px;
     position: absolute;
     left: 54%;
     transform: translate(-50%, -50%);
-    top: 31%;
+    top: 39%;
     z-index: -1;
 
-    @media (max-width: 1504px) {
-      width: calc(1348px - 5%);
-      height: calc(640px - 5%);
-      top: 27%;
+    @media (max-width: 1400px) {
+      width: calc(1214px - 20%);
+      height: calc(577px - 20%);
       object-fit: contain;
     }
 
-    @media (max-width: 1485px) {
-      width: 1348px;
-      height: calc(640px - 5%);
-      top: 24%;
-      left: 53%;
-    }
-
-    @media (max-width: 1473px) {
-      left: 54%;
-    }
-
-    @media (max-width: 1443px) {
-      width: calc(1348px - 5%);
-      height: calc(640px - 10%);
-      top: 35%;
-    }
-
-    @media (max-width: 1400px) {
-      width: calc(1348px - 20%);
-      height: calc(640px - 20%);
-      top: 33%;
-      left: 50%;
-    }
-
-    @media (max-width: 1320px) {
-      top: 37%;
-      left: 53%;
-    }
-
-    @media (max-width: 1270px) {
-      top: 30%;
-    }
-
-    @media (max-width: 1240px) {
-      left: 53%;
-    }
-
-    @media (max-width: 1217px) {
-      left: 51%;
-    }
-
-    @media (max-width: 1171px) {
-      width: calc(1348px - 30%);
-      height: calc(640px - 30%);
-      top: 35%;
-    }
-
-    @media (max-width: 1076px) {
-      top: 43%;
-      left: 48%;
+    @media (max-width: 1150px) {
+      width: calc(1214px - 30%);
+      height: calc(577px - 30%);
     }
 
     @include vp-1023 {
